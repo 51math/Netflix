@@ -1,0 +1,327 @@
+body{
+	overflow-x: hidden;
+    background-color: black;
+}
+header{
+	height: 100vh;
+	background-image: url(../imgs/header_banner.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Manrope', sans-serif;
+}
+section{
+    border-bottom: 8px solid #222;
+}
+.headerbar{
+    border-top: 8px solid #222;
+}
+.navbar{
+	padding-top: 20px;
+	z-index: 1;
+	margin: 0 5%;
+}
+.navbar-brand svg{
+    fill: #e50914;
+    line-height: normal;
+    height: 45px;
+    width: 167px;
+}
+.navbar .btn{
+	background-color: #e50914;
+    line-height: normal;
+    color: white;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    border:none;
+}
+header .container{
+	z-index: 1;
+}
+.gradient{
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.box{
+    margin-top: 15%;
+}
+.box h1,.box h2{
+	max-width: 680px;
+    margin: 0 auto;
+    color: white;
+}
+.box h1{
+	font-size: 4rem;
+	font-weight: 800;
+}
+.box h2{
+    margin: 1rem auto;
+    font-size: 1.625rem;
+}
+.box h3{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: normal;
+    margin-top: 10px;
+}
+.input-group{
+    margin: 0 auto;
+    max-width: 740px;
+}
+.newsletter input{
+    border-radius: 2px;
+    max-width: 500px;
+    height: 70px !important;
+   
+    padding: 10px 10px 0;
+    width: 100%;
+    box-shadow: none;
+    font-size: 16px;
+    border: solid 1px #8c8c8c;
+    color: #000000;
+}
+.newsletter .btn{
+    border-radius: 2px;
+    text-align: center;
+    padding-right: 3.25rem;
+    padding-left: 1.6125rem;
+    font-size: 1.875rem;
+    min-height: 70px;
+    border: 1px solid #e50914;
+    padding: .5rem 1em;
+    line-height: initial;
+    min-width: 112px;
+    color: #fff;
+    background-color: #e50914;
+    background-image: linear-gradient(to bottom, #e50914, #db0510);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    letter-spacing: .1px;
+   
+}
+.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.newsletter label{
+    font-size: 16px;
+    transform: translateY(-50%);
+    transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease, -webkit-transform 0.1s ease, -moz-transform 0.1s ease, -o-transform 0.1s ease;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    z-index: 5;
+    color: #8c8c8c;
+}
+.newsletter input:focus + label, .newsletter .hasText + label {
+    top: 4px;
+    font-size: 11px;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+@media screen and (min-width: 740px){
+    .newsletter input:focus + label, .newsletter input .hasText + label {
+        top: 6px;
+        font-weight: 700;
+        font-size: 13px;
+    }
+}
+.form-control:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+.newsletter .btn i{
+    font-size: 20px;
+    position: relative;
+    top: -3px;
+    float: none;
+}
+
+
+
+
+.tv{
+    color: white;
+    padding: 50px 45px;
+}
+.tv h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    margin: 0 0 .4em;
+}
+.tv h2{
+    font-size: 1.625rem;
+    font-weight: normal;
+    margin: .75em 0 .25em;
+}
+.animation_box{
+    padding: 0.5em 0.75em;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: black;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    min-width: 15em;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 2em 0 #000000;
+    border-radius: 0.75em;
+}
+.animation_box p{
+    margin-bottom: 0px;
+}
+.animation_box strong{
+    font-weight: 1em;
+}
+.animation_box .blue{
+    color: #0071eb;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+
+/*frequently asked question section*/
+.questions{
+    color: white;
+    padding: 50px 45px;
+}
+.questions h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.accordion{
+    max-width: 815px;
+    margin: 0 auto;
+}
+.questions .bar{
+    margin-bottom: 8px;
+}
+.questions h2 button{
+    background: #303030;
+    font-size: 1.625rem;
+    font-weight: normal;
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding: 0.6em 2.2em 0.6em 1.2em;
+    border-radius: 0px;
+}
+.questions button i{
+    float: right;
+    margin-top: 7px;
+}
+.questions .btn.focus,.questions .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.questions .btn:hover {
+    color: white;
+    text-decoration: none;
+}
+.questions .card-body{
+    margin-top: 2px;
+    background: #303030;
+    padding: 1.2em;
+    font-size: 1.625rem;
+    font-weight: normal;
+}
+.collapsing {
+    transition: height .15s ease;
+}
+
+.questions .fa-plus{
+    display: none;
+}
+.questions .collapsed .fa-plus{
+    display: block;
+}
+.questions .collapsed .fa-times{
+    display: none;
+}
+.questions h3{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: normal;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer{
+    max-width: 1000px;
+    padding: 70px 45px;
+    margin: 0 auto;
+}
+footer p{
+    margin-bottom: 0px;
+}
+footer a,footer a:hover{
+    color: #757575;
+    font-size: 1em;
+    margin-bottom: 16px;
+}
+footer span{
+    font-size: 13px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .box h1 {
+        font-size: 2rem;
+     }
+    .box h2 {
+        font-size: 1rem;
+    }
+    .input-group{
+        display: block;
+    }
+    .newsletter label{
+        top: 27%;
+    }
+    .newsletter .btn{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8px;
+        font-size: 1rem;
+        min-height: 50px;
+    }
+    .newsletter .btn i {
+        font-size: 12px;
+        top: -2px;
+    }
+    .tv h1 {
+        font-size: 2.3rem;
+    }
+    .tv h2 {
+        font-size: 1rem;
+    }
+    .questions h1 {
+        font-size: 2rem;
+    }
+    .questions h2 button {
+        font-size: 1rem;
+    }
+    .questions .card-body {
+        font-size: 1rem;
+    }    
+}
+
